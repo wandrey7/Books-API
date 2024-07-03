@@ -66,6 +66,14 @@ class BookController {
 
   async createBook(req, res) {
     let books = req.body;
+
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      const validationErrors = errors.array().map((err) => ({
+        message: `Validation error': ${err.msg}`,
+      }));
+      return res.status(400).json({ errors: validationErrors });
+    }
     try {
       const existingBooks = await Book.findAll({
         where: {
@@ -121,7 +129,7 @@ class BookController {
           conflicts: conflicts,
         });
       }
-      // 201
+
       res.status(200).json({
         message: "Successfully created books!",
         books: newBooks.map((book) => ({
