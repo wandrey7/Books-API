@@ -14,7 +14,7 @@
     "name": "Wandrey",
     "url": "https://github.com/wandrey7"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2",

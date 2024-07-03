@@ -121,12 +121,7 @@ Este repositório apresenta uma API desenvolvida em Node.js, utilizando o ORM Se
 
 3. Configure as variáveis de ambiente:
 
-   Crie um arquivo `.env` na raiz do projeto e configure as variáveis necessárias, como:
-
-   ```
-   PORT=3000
-   DATABASE_URL=postgres://usuario:senha@localhost:5432/nome-do-banco
-   ```
+   Crie um arquivo `.env` na raiz do projeto e configure as variáveis necessárias citadas no .env.example
 
 4. Inicie a aplicação:
 
@@ -137,3 +132,7 @@ Este repositório apresenta uma API desenvolvida em Node.js, utilizando o ORM Se
 ## Contribuindo
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT.
