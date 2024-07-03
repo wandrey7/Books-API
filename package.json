@@ -1,0 +1,35 @@
+{
+  "name": "my-nodejs-api-books",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "node --watch --no-warnings server.js",
+    "start": "node server.js",
+    "migrate": "sequelize-cli db:migrate"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Wandrey",
+    "url": "https://github.com/wandrey7"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "express-validator": "^7.1.0",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.12.0",
+    "pg-hstore": "^2.3.4",
+    "rotating-file-stream": "^3.2.3",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "sequelize-cli": "^6.6.2",
+    "supertest": "^7.0.0"
+  }
+}

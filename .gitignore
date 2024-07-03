@@ -1,0 +1,8 @@
+npm-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+node_modules/
+.npm
+.env
+.cache
+
+
